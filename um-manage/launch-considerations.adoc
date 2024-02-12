@@ -1,0 +1,22 @@
+---
+permalink: um-manage/launch-considerations.html 
+sidebar: sidebar 
+keywords: considerations, for, accessing, santricity, system, manager, 
+summary: Selecione um ou mais storages e use a opção Iniciar para abrir o Gerenciador de sistemas do SANtricity quando quiser configurar e gerenciar storages. 
+---
+= Considerações para acessar o Gerenciador de sistema do SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Selecione um ou mais storages e use a opção Iniciar para abrir o Gerenciador de sistemas do SANtricity quando quiser configurar e gerenciar storages.
+
+O Gerenciador de sistema SANtricity é um aplicativo incorporado no controlador E2800 ou E5700, que é conetado à rede por meio de uma porta de gerenciamento Ethernet.
+
+O Gerenciador de sistema do SANtricity inclui todas as funções baseadas em array para storages E2800 ou E5700.
+
+Para acessar o Gerenciador de sistema do SANtricity, você deve ter uma conexão fora da banda com um cliente de gerenciamento de rede com um navegador da Web.
+
+image::../media/single2800.gif[single2800]

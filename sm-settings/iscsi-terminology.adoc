@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/iscsi-terminology.html 
+sidebar: sidebar 
+keywords: iscsi, storage array, terms apply 
+summary: Saiba como os termos iSCSI se aplicam à sua matriz de armazenamento. 
+---
+= Terminologia iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos iSCSI se aplicam à sua matriz de armazenamento.
+
+[cols="1a,3a"]
+|===
+| Prazo | Descrição 
+
+
+ a| 
+CHAP
+ a| 
+O método CHAP (Challenge Handshake Authentication Protocol) valida a identidade de alvos e iniciadores durante o link inicial. A autenticação é baseada em uma chave de segurança compartilhada chamada CHAP__SECRET__.
+
+
+
+ a| 
+Controlador
+ a| 
+Um controlador consiste em uma placa, firmware e software. Controla as unidades e implementa as funções do System Manager.
+
+
+
+ a| 
+DHCP
+ a| 
+DHCP (Dynamic Host Configuration Protocol) é um protocolo usado em redes IP (Internet Protocol) para distribuir dinamicamente parâmetros de configuração de rede, como endereços IP.
+
+
+
+ a| 
+IB
+ a| 
+InfiniBand (IB) é um padrão de comunicação para a transmissão de dados entre servidores de alto desempenho e sistemas de armazenamento.
+
+
+
+ a| 
+Resposta ICMP PING
+ a| 
+O ICMP (Internet Control Message Protocol) é um protocolo usado por sistemas operacionais de computadores em rede para enviar mensagens. As mensagens ICMP determinam se um host é acessível e quanto tempo leva para obter pacotes de e para esse host.
+
+
+
+ a| 
+IQN
+ a| 
+Um identificador IQN (iSCSI Qualified Name) é um nome exclusivo para um iniciador iSCSI ou destino iSCSI.
+
+
+
+ a| 
+Iser
+ a| 
+Extensões iSCSI para RDMA (iSER) é um protocolo que estende o protocolo iSCSI para operação através de transportes RDMA, como InfiniBand ou Ethernet.
+
+
+
+ a| 
+ISNS
+ a| 
+O Internet Storage Name Service (iSNS) é um protocolo que permite a deteção, o gerenciamento e a configuração automatizada de dispositivos iSCSI e Fibre Channel em redes TCP/IP.
+
+
+
+ a| 
+Endereço MAC
+ a| 
+Identificadores de controle de acesso de Mídia (endereços MAC) são usados pela Ethernet para distinguir entre canais lógicos separados conetando duas portas na mesma interface de rede de transporte físico.
+
+
+
+ a| 
+Cliente de gestão
+ a| 
+Um cliente de gerenciamento é o computador em que um navegador está instalado para acessar o System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Uma MTU (Maximum Transmission Unit) é o pacote ou quadro de maior tamanho que pode ser enviado em uma rede.
+
+
+
+ a| 
+RDMA
+ a| 
+O Acesso remoto à memória direta (RDMA) é uma tecnologia que permite que os computadores de rede troquem dados na memória principal sem envolver o sistema operacional de qualquer computador.
+
+
+
+ a| 
+Sessão de descoberta sem nome
+ a| 
+Quando a opção para sessões de descoberta sem nome está ativada, os iniciadores iSCSI não são necessários para especificar o IQN de destino para recuperar as informações do controlador.
+
+|===

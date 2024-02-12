@@ -1,0 +1,103 @@
+---
+permalink: sm-settings/create-external-security-key.html 
+sidebar: sidebar 
+keywords: drive security, feature, key management server, external key, secure capable drive, storage array 
+summary: Para usar o recurso Segurança da unidade com um servidor de gerenciamento de chaves, você deve criar uma chave externa compartilhada pelo servidor de gerenciamento de chaves e pelas unidades com capacidade segura no storage de armazenamento. 
+---
+= Criar chave de segurança externa
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para usar o recurso Segurança da unidade com um servidor de gerenciamento de chaves, você deve criar uma chave externa compartilhada pelo servidor de gerenciamento de chaves e pelas unidades com capacidade segura no storage de armazenamento.
+
+.Antes de começar
+* As unidades com capacidade de segurança devem ser instaladas no array. Essas unidades podem ser unidades com criptografia total de disco (FDE) ou unidades FIPS (Federal Information Processing Standard).
++
+[NOTE]
+====
+Se as unidades FDE e FIPS estiverem instaladas no storage de armazenamento, todas elas compartilharão a mesma chave de segurança.
+
+====
+* O recurso Segurança da unidade deve estar ativado. Caso contrário, uma caixa de diálogo *não é possível criar chave de segurança* será aberta durante esta tarefa. Se necessário, entre em Contato com o fornecedor de armazenamento para obter instruções sobre como ativar o recurso Segurança da unidade.
+* Os certificados de cliente e servidor estão disponíveis em seu host local para que o storage array e o servidor de gerenciamento de chaves possam se autenticar. O certificado do cliente valida os controladores, enquanto o certificado do servidor valida o servidor de gestão de chaves.
+
+
+.Sobre esta tarefa
+Nesta tarefa, você define o endereço IP do servidor de gerenciamento de chaves e o número da porta que ele usa e, em seguida, carrega certificados para gerenciamento de chaves externas.
+
+.Passos
+. Selecione *menu:Configurações[sistema]*.
+. Em *Gerenciamento de chaves de segurança*, selecione *criar chave externa*.
++
+[NOTE]
+====
+Se o gerenciamento de chaves internas estiver configurado no momento, uma caixa de diálogo será aberta e solicitará que você confirme se deseja mudar para o gerenciamento de chaves externas.
+
+====
++
+A caixa de diálogo *Create External Security Key* (criar chave de segurança externa*) é aberta.
+
+. Em *conetar ao Key Server*, insira as informações nos seguintes campos:
++
+** *Endereço do servidor de gerenciamento de chaves* -- Digite o nome de domínio totalmente qualificado ou o endereço IP (IPv4 ou IPv6) do servidor usado para o gerenciamento de chaves.
+** *Número da porta de gerenciamento de chaves* -- Digite o número da porta usada para as comunicações KMIP (Key Management Interoperability Protocol). O número de porta mais comum usado para comunicações do servidor de gerenciamento de chaves é 5696.
+** *Selecione o certificado do cliente* -- clique no primeiro botão *Procurar* para selecionar o arquivo de certificado para os controladores do storage.
+** *Selecione o certificado do servidor de gerenciamento de chaves* -- clique no segundo botão *Procurar* para selecionar o arquivo de certificado para o servidor de gerenciamento de chaves.
+
+
+. Clique em *seguinte*.
+. Em *Create/Backup Key*, insira as informações no campo a seguir:
++
+** * Definir uma frase-passe/re-insira a frase-passe* -- Digite e confirme uma frase-passe. O valor pode ter entre 8 e 32 carateres e deve incluir cada um dos seguintes:
++
+*** Uma letra maiúscula (uma ou mais). Tenha em mente que a frase-passe é sensível a maiúsculas e minúsculas.
+*** Um número (um ou mais).
+*** Um caráter não alfanumérico, como !, *, at (um ou mais).
+
+
+
+
++
+[CAUTION]
+====
+Certifique-se de que grava as suas entradas para utilização posterior. Se você precisar mover uma unidade habilitada para segurança do storage de armazenamento, você deve saber a frase-passe para desbloquear os dados da unidade.
+
+====
+. Clique em *Finish*.
++
+O sistema se coneta ao servidor de gerenciamento de chaves com as credenciais inseridas. Uma cópia da chave de segurança é então armazenada no sistema local.
+
++
+[NOTE]
+====
+O caminho para o arquivo baixado pode depender do local de download padrão do seu navegador.
+
+====
+. Grave a frase-passe e a localização do ficheiro de chave transferido e, em seguida, clique em *Fechar*.
++
+A página exibe a seguinte mensagem com links adicionais para gerenciamento de chaves externas:
+
++
+`Current key management method: External`
+
+. Teste a conexão entre o storage array e o servidor de gerenciamento de chaves selecionando *Test Communication*.
++
+Os resultados do teste são exibidos na caixa de diálogo.
+
+
+
+.Resultados
+Quando o gerenciamento de chaves externas está habilitado, você pode criar grupos ou pools de volumes habilitados para segurança ou habilitar a segurança em grupos de volumes e pools existentes.
+
+[NOTE]
+====
+Sempre que a alimentação das unidades for desligada e novamente ligada, todas as unidades ativadas para segurança mudam para um estado de segurança bloqueado. Neste estado, os dados ficam inacessíveis até que o controlador aplique a chave de segurança correta durante a inicialização da unidade. Se alguém remover fisicamente uma unidade bloqueada e instalá-la em outro sistema, o estado Segurança bloqueada impede o acesso não autorizado aos seus dados.
+
+====
+.Depois de terminar
+* Você deve validar a chave de segurança para se certificar de que o arquivo de chave não está corrompido.
+

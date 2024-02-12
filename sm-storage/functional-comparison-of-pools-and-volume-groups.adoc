@@ -1,0 +1,215 @@
+---
+permalink: sm-storage/functional-comparison-of-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: function, purpose, pool, volume, group, same, objects, set, drives, logically, together, storage, array, create, host, access 
+summary: A função e o propósito de um pool e um grupo de volume são os mesmos. Ambos os objetos são um conjunto de unidades agrupadas logicamente em um storage array e são usados para criar volumes que um host pode acessar. 
+---
+= Comparação funcional de piscinas e grupos de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A função e o propósito de um pool e um grupo de volume são os mesmos. Ambos os objetos são um conjunto de unidades agrupadas logicamente em um storage array e são usados para criar volumes que um host pode acessar.
+
+A tabela a seguir ajuda você a decidir se um pool ou um grupo de volumes se adapta melhor às suas necessidades de armazenamento.
+
+[cols="3*""]
+|===
+| Função | Piscina | Grupo de volume 
+
+
+ a| 
+Nível RAID diferente suportado
+ a| 
+Não. Sempre RAID 6.
+ a| 
+Sim. RAID 0, 1, 10, 5 e 6 disponíveis.
+
+
+
+ a| 
+Thin volumes suportados
+ a| 
+Sim
+ a| 
+Não
+
+
+
+ a| 
+Suporte a criptografia completa de disco (FDE)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Garantia de dados (DA) suportada
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Proteção contra perda de prateleira suportada
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Proteção contra perda de gaveta suportada
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Velocidades de transmissão mistas suportadas
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A unidade mais lenta determina a velocidade para todas as unidades.
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A unidade mais lenta determina a velocidade para todas as unidades.
+
+
+
+ a| 
+Capacidade de unidade mista com suporte
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A menor unidade determina a capacidade de todas as unidades.
+ a| 
+Recomendado para ser o mesmo, mas não necessário. A menor unidade determina a capacidade de todas as unidades.
+
+
+
+ a| 
+Número mínimo de unidades
+ a| 
+11
+ a| 
+Depende do nível RAID. RAID 0 precisa de 1. RAID 1 ou 10 precisa de 2 (requer um número par). RAID 5 mínimo é 3. RAID 6 mínimo é 5.
+
+
+
+ a| 
+Número máximo de unidades
+ a| 
+Até o limite máximo para a matriz de armazenamento
+ a| 
+RAID 1 e 10 - até o limite máximo das unidades RAID 5, 6--30 da matriz de armazenamento
+
+
+
+ a| 
+Pode escolher unidades individuais ao criar um volume
+ a| 
+Não
+ a| 
+Sim
+
+
+
+ a| 
+Pode especificar o tamanho do segmento ao criar um volume
+ a| 
+Sim. 128K suportado.
+ a| 
+Sim
+
+
+
+ a| 
+Pode especificar as caraterísticas de e/S ao criar um volume
+ a| 
+Não
+ a| 
+Sim. Sistema de arquivos, banco de dados, Multimídia e personalizado suportados.
+
+
+
+ a| 
+Proteção contra falha da unidade
+ a| 
+Usa capacidade de preservação em cada unidade na piscina, tornando a reconstrução mais rápida.
+ a| 
+Utiliza uma unidade hot spare. A reconstrução é limitada pelos IOPs da unidade.
+
+
+
+ a| 
+Aviso ao atingir o limite de capacidade
+ a| 
+Sim. Pode definir um alerta quando a capacidade utilizada atinge uma percentagem da capacidade máxima.
+ a| 
+Não
+
+
+
+ a| 
+Suporte à migração para um storage array diferente
+ a| 
+Não. Requer que você migre para um grupo de volumes primeiro.
+ a| 
+Sim
+
+
+
+ a| 
+Tamanho dinâmico do segmento (DSS)
+ a| 
+Não
+ a| 
+Sim
+
+
+
+ a| 
+Pode alterar o nível RAID
+ a| 
+Não
+ a| 
+Sim
+
+
+
+ a| 
+Expansão de volume (aumentar a capacidade)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Expansão de capacidade (adicionar capacidade)
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+ a| 
+Redução de capacidade
+ a| 
+Sim
+ a| 
+Não
+
+|===
+[NOTE]
+====
+Os tipos de unidades mistas (HDD, SSD) não são compatíveis com pools ou grupos de volumes.
+
+====

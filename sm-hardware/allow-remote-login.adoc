@@ -1,0 +1,35 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: remote, login, lan, outside, ssh session, change settings, controller 
+summary: O login remoto permite que os usuários de fora da rede local iniciem uma sessão SSH e alterem as configurações no controlador. 
+---
+= Permitir login remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O login remoto permite que os usuários de fora da rede local iniciem uma sessão SSH e alterem as configurações no controlador.
+
+[CAUTION]
+====
+*Risco de segurança* -- por motivos de segurança, ative o login remoto para uso somente pelo suporte técnico.
+
+====
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar as unidades, clique em *Mostrar parte traseira da prateleira*.
++
+O gráfico muda para mostrar os controladores em vez das unidades.
+
+. Clique no controlador para o qual pretende ativar o início de sessão remoto.
++
+É apresentado o menu de contexto do controlador.
+
+. Selecione *alterar início de sessão remoto* e confirme que pretende executar a operação.
+
+
+.Resultados
+Depois que o suporte técnico terminar a solução de problemas, siga este mesmo procedimento para desativar o login remoto. A desativação do login remoto termina todas as sessões SSH atuais e rejeita quaisquer novas solicitações de login.

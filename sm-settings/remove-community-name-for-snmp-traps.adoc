@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/remove-community-name-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: remove, community, snmp traps 
+summary: Você pode remover um nome de comunidade para traps SNMP. 
+---
+= Remova o nome da comunidade para traps SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode remover um nome de comunidade para traps SNMP.
+
+.Passos
+. Selecione *menu:Configurações[Alertas]*.
+. Selecione a guia *SNMP*.
++
+Os destinos da armadilha e os nomes da comunidade aparecem na página Alertas.
+
+. Selecione *Configurar Comunidades*.
++
+A caixa de diálogo *Configurar Comunidades* é aberta.
+
+. Selecione o nome da comunidade que deseja excluir e clique no ícone *Remover* (X) na extrema direita.
++
+Se os destinos de intercetação estiverem associados a esse nome de comunidade, a caixa de diálogo *Confirm Remove Community* (confirmar remoção da comunidade) mostrará os endereços de destino de intercetação afetados.
+
+. Confirme a operação e clique em *Remover*.
+
+
+.Resultados
+O nome da comunidade e seu destino de armadilha associado são removidos da página *Alertas*.

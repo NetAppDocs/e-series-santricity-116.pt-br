@@ -1,0 +1,40 @@
+---
+permalink: sm-support/collect-drive-data.html 
+sidebar: sidebar 
+keywords: collect, log, data, drives, storage, array, send, file, technical, support, analysis, task 
+summary: Você pode coletar dados de log de todas as unidades em seu storage array e enviar o arquivo para suporte técnico para análise. 
+---
+= Coletar dados da unidade
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode coletar dados de log de todas as unidades em seu storage array e enviar o arquivo para suporte técnico para análise.
+
+.Sobre esta tarefa
+Os dados de log consistem em informações estatísticas que são mantidas por cada uma das unidades em seu storage array. O suporte técnico pode usar essas informações para analisar o desempenho de suas unidades e para solucionar problemas que possam existir.
+
+[NOTE]
+====
+Execute esta operação somente quando instruído a fazê-lo pelo suporte técnico.
+
+====
+.Passos
+. Selecione menu:guia Support [Support Center > Diagnostics] (suporte > Centro de suporte > Diagnóstico).
+. Selecione *Collect Drive Data*.
++
+Uma caixa de diálogo aparece listando todas as unidades em seu storage de armazenamento.
+
+. Na primeira coluna da tabela, você pode selecionar unidades individuais para as quais deseja coletar dados (clique na caixa de seleção ao lado de cada unidade) ou selecionar todas as unidades (marque a caixa de seleção no cabeçalho da tabela).
++
+Para encontrar unidades específicas, você pode classificar qualquer uma das colunas ou digitar carateres na caixa *filtro*.
+
+. Clique em *Collect*.
++
+O arquivo é salvo na pasta Downloads do navegador com o nome `drive-data.7z`.
+
+. Siga as instruções fornecidas pelo suporte técnico para enviar o arquivo para eles.
+

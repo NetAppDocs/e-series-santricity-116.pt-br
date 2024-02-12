@@ -1,0 +1,140 @@
+---
+section: sm-mirroring
+title: Espelhamento
+entries:
+- title: Espelhamento assíncrono
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Como o espelhamento assíncrono funciona
+      url: "/sm-mirroring/how-asynchronous-mirroring-works.html"
+    - title: Terminologia de espelhamento assíncrono
+      url: "/sm-mirroring/asynchronous-terminology.html"
+    - title: Fluxo de trabalho para espelhar um volume de forma assíncrona
+      url: "/sm-mirroring/workflow-for-mirroring-a-volume-asynchronously.html"
+    - title: Requisitos para uso do espelhamento assíncrono
+      url: "/sm-mirroring/requirements-for-using-asynchronous-mirroring.html"
+    - title: Estado do espelho assíncrono
+      url: "/sm-mirroring/asynchronous-mirror-status.html"
+    - title: Propriedade do volume
+      url: "/sm-mirroring/volume-ownership-async.html"
+    - title: Mudança de papel de um grupo de consistência de espelho
+      url: "/sm-mirroring/role-change-of-a-mirror-consistency-group.html"
+  - title: Como tos
+    entries:
+    - title: Gerenciar grupos de consistência de espelho
+      entries:
+      - title: Teste a comunicação para grupos de consistência de espelhos
+        url: "/sm-mirroring/test-communication-for-mirror-consistency-groups.html"
+      - title: Suspender ou retomar a sincronização para o grupo de consistência do
+          espelho
+        url: "/sm-mirroring/suspend-or-resume-mirror-consistency-group.html"
+      - title: Altere as configurações de sincronização para um grupo de consistência
+          de espelho
+        url: "/sm-mirroring/change-synchronization-settings-for-a-mirror-consistency-group.html"
+      - title: Sincronize novamente o grupo de consistência de espelhos manualmente
+        url: "/sm-mirroring/re-synchronize-mirror-consistency-group-manually.html"
+      - title: Exibir a quantidade de dados não sincronizados entre grupos de consistência
+          de espelho
+        url: "/sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html"
+      - title: Atualize o endereço IP remoto
+        url: "/sm-mirroring/update-remote-ip-address.html"
+      - title: Altere a função do grupo de consistência do espelho para primário ou
+          secundário
+        url: "/sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html"
+      - title: Eliminar grupo de consistência de espelho
+        url: "/sm-mirroring/delete-mirror-consistency-group.html"
+    - title: Gerenciar pares espelhados assíncronos
+      entries:
+      - title: Remova a relação assíncrona do espelho
+        url: "/sm-mirroring/remove-mirrored-pair.html"
+      - title: Aumentar a capacidade reservada
+        url: "/sm-mirroring/increase-reserved-capacity.html"
+      - title: Altere as configurações de capacidade reservada para um volume de par
+          espelhado
+        url: "/sm-mirroring/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html"
+      - title: Par espelhado completo para volumes primários criados no sistema legado
+        url: "/sm-mirroring/complete-mirrored-pair-for-primary-volumes-created-on-legacy-system.html"
+    - title: Desativar o espelhamento assíncrono
+      url: "/sm-mirroring/deactivate-asynchronous-mirroring.html"
+  - title: FAQs
+    entries:
+    - title: Como o espelhamento assíncrono difere do espelhamento síncrono?
+      url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html"
+    - title: Por que não consigo acessar meu recurso de espelhamento escolhido?
+      url: "/sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html"
+    - title: O que eu preciso saber antes de criar um grupo de consistência de espelho?
+      url: "/sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html"
+    - title: Espelhamento assíncrono - o que preciso saber antes de criar um par espelhado?
+      url: "/sm-mirroring/asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
+    - title: O que eu preciso saber antes de aumentar minha capacidade reservada em
+        um volume de par espelhado?
+      url: "/sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html"
+    - title: Por que não posso aumentar a capacidade reservada com o meu valor solicitado?
+      url: "/sm-mirroring/why-cant-i-increase-reserved-capacity-with-my-requested-amount.html"
+    - title: Por que eu alteraria essa porcentagem?
+      url: "/sm-mirroring/why-would-i-change-this-percentage.html"
+    - title: Por que vejo mais de um candidato à capacidade reservada?
+      url: "/sm-mirroring/why-do-i-see-more-than-one-reserved-capacity-candidate.html"
+    - title: Por que vejo valores não disponíveis exibidos na tabela?
+      url: "/sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html"
+    - title: Por que não vejo todos os meus pools e grupos de volume?
+      url: "/sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html"
+    - title: Espelhamento assíncrono - por que não vejo todos os meus volumes?
+      url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html"
+    - title: Espelhamento assíncrono - por que não vejo todos os volumes no storage
+        array remoto?
+      url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
+    - title: Por que eu atualizaria o endereço IP da minha matriz de armazenamento
+        remoto?
+      url: "/sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html"
+- title: Espelhamento síncrono
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Como o espelhamento síncrono funciona
+      url: "/sm-mirroring/how-synchronous-mirroring-works.html"
+    - title: Terminologia de espelhamento síncrono
+      url: "/sm-mirroring/synchronous-mirroring-terminology.html"
+    - title: Fluxo de trabalho para espelhar um volume de forma síncrona
+      url: "/sm-mirroring/workflow-for-mirroring-a-volume-synchronously.html"
+    - title: Requisitos para o uso do espelhamento síncrono
+      url: "/sm-mirroring/requirements-for-using-synchronous-mirroring.html"
+    - title: Status do espelhamento síncrono
+      url: "/sm-mirroring/synchronous-mirroring-status.html"
+    - title: Propriedade do volume
+      url: "/sm-mirroring/volume-ownership-sync.html"
+    - title: Mudança de função entre volumes em um par espelhado
+      url: "/sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html"
+  - title: Como tos
+    entries:
+    - title: Gerenciar pares espelhados síncronos
+      entries:
+      - title: Teste a comunicação para espelhamento síncrono
+        url: "/sm-mirroring/test-communication-for-synchronous-mirroring.html"
+      - title: Suspender e retomar a sincronização para um par espelhado
+        url: "/sm-mirroring/suspend-and-resume-synchronization-for-a-mirrored-pair.html"
+      - title: Alterar função entre volumes em um par espelhado
+        url: "/sm-mirroring/change-role-between-volumes-in-a-mirrored-pair.html"
+      - title: Altere as configurações de sincronização para um par espelhado
+        url: "/sm-mirroring/change-synchronization-settings-for-a-mirrored-pair.html"
+      - title: Remova a relação do espelho síncrono
+        url: "/sm-mirroring/remove-synchronous-mirror-relationship.html"
+    - title: Desativar o espelhamento síncrono
+      url: "/sm-mirroring/deactivate-synchronous-mirroring.html"
+  - title: FAQs
+    entries:
+    - title: Como o espelhamento síncrono difere do espelhamento assíncrono?
+      url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-sync.html"
+    - title: Espelhamento síncrono - por que não vejo todos os meus volumes?
+      url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-my-volumes.html"
+    - title: Espelhamento síncrono - por que não vejo todos os volumes no storage
+        array remoto?
+      url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
+    - title: Espelhamento síncrono - o que eu preciso saber antes de criar um par
+        espelhado?
+      url: "/sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
+    - title: Qual o impactos que a prioridade de sincronização tem nas taxas de sincronização?
+      url: "/sm-mirroring/what-impact-does-synchronization-priority-have-on-synchronization-rates.html"
+    - title: Por que é recomendável usar uma política de sincronização manual?
+      url: "/sm-mirroring/why-is-it-recommended-to-use-a-manual-synchronization-policy.html"

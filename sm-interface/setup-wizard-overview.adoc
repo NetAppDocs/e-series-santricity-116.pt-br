@@ -1,0 +1,27 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: setup wizard, configure, storage, array, hardware, host, application workload, alert, autosupport 
+summary: Use o assistente de configuração para configurar seu storage array, incluindo hardware, hosts, aplicativos, workloads, pools, alertas e AutoSupport. 
+---
+= Descrição geral do assistente de configuração
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use o assistente de configuração para configurar seu storage array, incluindo hardware, hosts, aplicativos, workloads, pools, alertas e AutoSupport.
+
+Quando abre o System Manager pela primeira vez, o assistente de configuração é iniciado.
+
+O assistente de configuração solicita que você execute tarefas básicas de configuração, como nomear sua matriz de armazenamento, configurar seus hosts, selecionar aplicativos e criar pools de armazenamento.
+
+Se você cancelar o assistente, não será possível reiniciá-lo manualmente.
+
+O assistente reinicia automaticamente quando você abre o System Manager ou atualiza o navegador e _pelo menos uma_ das seguintes condições é atendida:
+
+* Não foram detetados pools e grupos de volume.
+* Nenhuma carga de trabalho é detetada.
+* Nenhuma notificação está configurada.
+

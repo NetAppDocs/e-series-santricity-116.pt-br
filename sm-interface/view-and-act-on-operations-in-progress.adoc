@@ -1,0 +1,38 @@
+---
+permalink: sm-interface/view-and-act-on-operations-in-progress.html 
+sidebar: sidebar 
+keywords: view, action, long-run, operations, progress 
+summary: Para ver e agir em operações de longa duração, use a página operações em andamento. 
+---
+= Visualizar e agir sobre as operações em andamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para ver e agir em operações de longa duração, use a página operações em andamento.
+
+.Sobre esta tarefa
+Para cada operação listada na página operações em andamento, uma porcentagem de conclusão e o tempo estimado restante para concluir a operação são mostrados. Em alguns casos, você pode parar uma operação ou colocá-la em uma prioridade maior ou menor. Também pode limpar uma operação de cópia de volume concluída a partir da lista.
+
+.Passos
+. Na página *Home*, selecione *Mostrar operações em andamento*.
++
+A página *operações em andamento* é exibida.
+
+. Se desejar, use os links na coluna *ações* para parar ou alterar a prioridade de uma operação.
++
+[CAUTION]
+====
+Leia todo o texto de advertência fornecido nas caixas de diálogo, particularmente ao parar uma operação.
+
+====
++
+Pode parar uma operação de cópia de volume ou alterar a sua prioridade.
+
+. Quando uma operação de cópia de volume estiver concluída, você poderá selecionar *Clear* para removê-la da lista.
++
+Na parte superior da página *Home*, uma mensagem informativa e o ícone de chave amarela aparecem quando uma operação estiver concluída. Esta mensagem inclui um link que permite limpar a operação da página *operações em andamento*.
+
+

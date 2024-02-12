@@ -1,0 +1,18 @@
+---
+permalink: sm-support/critical-events.html 
+sidebar: sidebar 
+keywords: critical, events, indicate, problem, storage, array, resolve, immediately, might, prevent, loss, data, access 
+summary: Eventos críticos indicam um problema com o storage array. Se você resolver o evento crítico imediatamente, poderá evitar a perda de acesso aos dados. 
+---
+= Eventos críticos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eventos críticos indicam um problema com o storage array. Se você resolver o evento crítico imediatamente, poderá evitar a perda de acesso aos dados.
+
+Quando ocorre um evento crítico, ele é registrado no log de eventos. Todos os eventos críticos são enviados para o console de gerenciamento SNMP ou para o destinatário de e-mail que você configurou para receber notificações de alerta. Se o ID do compartimento não for conhecido no momento do evento, o ID do compartimento é listado como "prateleira desconhecida".
+
+Quando receber um evento crítico, consulte o procedimento Recovery Guru para obter uma descrição detalhada do evento crítico. Conclua o procedimento Recovery Guru para corrigir o evento crítico. Para corrigir certos eventos críticos, talvez seja necessário entrar em Contato com o suporte técnico.

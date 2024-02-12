@@ -1,0 +1,234 @@
+---
+permalink: sm-support/mac-transmit-and-mac-receive-statistics.html 
+sidebar: sidebar 
+keywords: transmit, receive, statistics, ethernet, transmit 
+summary: Estatísticas de transmissão MAC e receção MAC 
+---
+= Estatísticas de transmissão MAC e receção MAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Quando você seleciona estatísticas Ethernet MAC, essas estatísticas de transmissão MAC são exibidas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
+
+[cols="2*"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+F
+ a| 
+Contagem de fotogramas
+
+
+
+ a| 
+B
+ a| 
+Contagem de bytes
+
+
+
+ a| 
+MF
+ a| 
+Contagem de quadros multicast
+
+
+
+ a| 
+BF
+ a| 
+Contagem de quadros de difusão
+
+
+
+ a| 
+PF
+ a| 
+Pausar contagem de quadros
+
+
+
+ a| 
+CF
+ a| 
+Contagem de quadros de controle
+
+
+
+ a| 
+FDF
+ a| 
+Contagem de diferimento da estrutura
+
+
+
+ a| 
+ALIMENTADO
+ a| 
+Contagem de diferimento em excesso de estrutura
+
+
+
+ a| 
+FLC
+ a| 
+Contagem de colisões atrasadas de quadros
+
+
+
+ a| 
+FA
+ a| 
+Contagem de cancelamento de fotogramas
+
+
+
+ a| 
+FSC
+ a| 
+Contagem de colisão única de quadro
+
+
+
+ a| 
+FMC
+ a| 
+A contagem de colisões múltiplas do quadro
+
+
+
+ a| 
+FC
+ a| 
+Contagem de colisões de quadros
+
+
+
+ a| 
+FDR
+ a| 
+Contagem de queda do quadro
+
+
+
+ a| 
+JF
+ a| 
+Contagem de quadros jumbo
+
+|===
+Quando você seleciona estatísticas Ethernet MAC, essas estatísticas de receção MAC são exibidas.
+
+[cols="2*"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+F
+ a| 
+Contagem de fotogramas
+
+
+
+ a| 
+B
+ a| 
+Contagem de bytes
+
+
+
+ a| 
+MF
+ a| 
+Contagem de quadros multicast
+
+
+
+ a| 
+BF
+ a| 
+Contagem de quadros de difusão
+
+
+
+ a| 
+PF
+ a| 
+Pausar contagem de quadros
+
+
+
+ a| 
+CF
+ a| 
+Contagem de quadros de controle
+
+
+
+ a| 
+FLE
+ a| 
+Contagem de erros de comprimento da estrutura
+
+
+
+ a| 
+FD
+ a| 
+Contagem de queda do quadro
+
+
+
+ a| 
+FCRCE
+ a| 
+Contagem de erros de CRC do fotograma
+
+
+
+ a| 
+TAXA
+ a| 
+Contagem de erros de codificação de fotogramas
+
+
+
+ a| 
+LFE
+ a| 
+Contagem de erros de fotograma grande
+
+
+
+ a| 
+SFE
+ a| 
+Contagem de erros de quadro pequeno
+
+
+
+ a| 
+J
+ a| 
+Jabber count
+
+
+
+ a| 
+UCC
+ a| 
+Contagem de quadros de controle desconhecida
+
+
+
+ a| 
+CSE
+ a| 
+Contagem de erros de deteção de operadora
+
+|===

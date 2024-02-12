@@ -1,0 +1,128 @@
+---
+section: um-manage
+title: Gerenciar
+entries:
+- title: Descubra matrizes de armazenamento
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Considerações para descobrir arrays
+      url: "/um-manage/considerations-for-discovering-arrays.html"
+  - title: Como tos
+    entries:
+    - title: Descubra vários storages de armazenamento
+      url: "/um-manage/discover-multiple-arrays.html"
+    - title: Descubra um único array
+      url: "/um-manage/discover-single-array.html"
+- title: Lançamento
+  entries:
+  - title: Considerações para acessar o Gerenciador de sistema do SANtricity
+    url: "/um-manage/launch-considerations.html"
+  - title: Gerenciar um storage array individual
+    url: "/um-manage/launch-system-manager.html"
+- title: Importar definições
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Como as Configurações de importação funcionam
+      url: "/um-manage/how-import-settings-works.html"
+    - title: Requisitos para replicação de configurações de storage
+      url: "/um-manage/requirements-for-replicating-storage-configurations.html"
+  - title: Como tos
+    entries:
+    - title: Importar definições de alerta
+      url: "/um-manage/import-alert-settings.html"
+    - title: Importar definições do AutoSupport
+      url: "/um-manage/import-autosupport-settings.html"
+    - title: Importar definições dos serviços de diretório
+      url: "/um-manage/import-directory-services-settings.html"
+    - title: Importar definições do sistema
+      url: "/um-manage/import-system-settings.html"
+    - title: Importar definições de configuração de armazenamento
+      url: "/um-manage/import-storage-configuration-settings.html"
+  - title: FAQs
+    entries:
+    - title: Que definições serão importadas?
+      url: "/um-manage/what-settings-will-be-imported.html"
+    - title: Por que não vejo todos os meus arrays de armazenamento?
+      url: "/um-manage/why-dont-i-see-all-of-my-storage-arrays.html"
+- title: Gerenciar grupos
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Grupos de storage array
+      url: "/um-manage/storage-array-groups.html"
+    - title: Status do storage array
+      url: "/um-manage/storage-array-status.html"
+  - title: Como tos
+    entries:
+    - title: Gerenciar grupos
+      entries:
+      - title: Crie um grupo de storage array
+        url: "/um-manage/create-storage-array-group.html"
+      - title: Eliminar grupo de matrizes de armazenamento
+        url: "/um-manage/delete-storage-array-group.html"
+      - title: Renomeie o grupo de storage array
+        url: "/um-manage/rename-storage-array-group.html"
+      - title: Adicione storage array ao grupo
+        url: "/um-manage/add-storage-array-to-group.html"
+      - title: Remova os storages de armazenamento do grupo
+        url: "/um-manage/remove-storage-arrays-from-group.html"
+    - title: Remova os storage arrays do SANtricity Unified Manager
+      url: "/um-manage/remove-storage-array.html"
+- title: Centro de atualizações
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Como as atualizações funcionam
+      url: "/um-manage/how-upgrades-work.html"
+    - title: Considerações sobre a atualização
+      url: "/um-manage/upgrade-considerations.html"
+  - title: Como tos
+    entries:
+    - title: Execute a verificação de integridade pré-atualização
+      url: "/um-manage/perform-pre-upgrade-health-check.html"
+    - title: Atualize o SANtricity os
+      url: "/um-manage/upgrade-controller-firmware.html"
+    - title: Ativar o software SO faseado
+      url: "/um-manage/activate-pending-firmware.html"
+    - title: Gerenciar o repositório de software
+      url: "/um-manage/manage-repository.html"
+    - title: Limpar o software de SO faseado
+      url: "/um-manage/clear-staged-os-software.html"
+- title: Espelhamento
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Visão geral do espelhamento
+      url: "/um-manage/mirroring-overview.html"
+    - title: Fluxo de trabalho de configuração de espelhamento
+      url: "/um-manage/mirroring-configuration-workflow.html"
+    - title: Terminologia de espelhamento
+      url: "/um-manage/mirroring-terminology.html"
+    - title: Requisitos para uso do espelhamento
+      url: "/um-manage/requirements-for-using-mirroring.html"
+  - title: Como tos
+    entries:
+    - title: Crie um par espelhado assíncrono
+      url: "/um-manage/create-asynchronous-mirrored-pair-um.html"
+    - title: Crie par espelhado síncrono
+      url: "/um-manage/create-synchronous-mirrored-pair-um.html"
+  - title: FAQs
+    entries:
+    - title: O que eu preciso saber antes de criar um grupo de consistência de espelho?
+      url: "/um-manage/what-do-i-need-to-know-before-creating-a-mirror-consistency-group-um.html"
+    - title: O que eu preciso saber antes de criar um par espelhado?
+      url: "/um-manage/what-do-i-need-to-know-before-creating-a-mirrored-pair-um.html"
+    - title: Por que eu alteraria essa porcentagem?
+      url: "/um-manage/why-would-i-change-this-percentage-um.html"
+    - title: Por que vejo mais de um candidato à capacidade reservada?
+      url: "/um-manage/why-do-i-see-more-than-one-reserved-capacity-candidate-um.html"
+    - title: Por que não vejo todos os meus volumes?
+      url: "/um-manage/why-dont-i-see-all-my-volumes-um.html"
+    - title: Por que não vejo todos os volumes no storage array remoto?
+      url: "/um-manage/why-dont-i-see-all-the-volumes-on-the-remote-storage-array-um.html"
+    - title: Qual o impactos que a prioridade de sincronização tem nas taxas de sincronização?
+      url: "/um-manage/what-impact-does-synchronization-priority-have-on-synchronization-rates-um.html"
+    - title: Por que é recomendável usar uma política de sincronização manual?
+      url: "/um-manage/why-is-it-recommended-to-use-a-manual-synchronization-policy-um.html"

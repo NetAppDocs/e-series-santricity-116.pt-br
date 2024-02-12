@@ -1,0 +1,117 @@
+---
+permalink: sm-hardware/controller-terminology.html 
+sidebar: sidebar 
+keywords: controller, terms, storage, array 
+summary: Saiba como os termos do controlador se aplicam à sua matriz de armazenamento. 
+---
+= Terminologia do controlador
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos do controlador se aplicam à sua matriz de armazenamento.
+
+[cols="1a,3a"]
+|===
+| Componente | Descrição 
+
+
+ a| 
+Controlador
+ a| 
+Um controlador consiste em uma placa, firmware e software. Controla as unidades e implementa as funções do System Manager.
+
+
+
+ a| 
+Compartimento do controlador
+ a| 
+Um compartimento de controladora contém um conjunto de unidades e um ou mais coletores de controladora. Um recipiente do controlador contém os controladores, placas de interface do host (HICs) e baterias.
+
+
+
+ a| 
+DHCP
+ a| 
+DHCP (Dynamic Host Configuration Protocol) é um protocolo usado em redes IP (Internet Protocol) para distribuir dinamicamente parâmetros de configuração de rede, como endereços IP.
+
+
+
+ a| 
+DNS
+ a| 
+O Domain Name System (DNS) é um sistema de nomes para dispositivos conetados à Internet ou a uma rede privada. O servidor DNS mantém um diretório de nomes de domínio e os converte em endereços IP (Internet Protocol).
+
+
+
+ a| 
+Configurações duplex
+ a| 
+O duplex é uma configuração de módulo de dois controladores dentro da matriz de armazenamento. Os sistemas duplex são totalmente redundantes em relação a controladores, caminhos de volume lógicos e caminhos de disco. Se um controlador falhar, o outro controlador assume sua e/S para manter a disponibilidade. Os sistemas duplex também têm ventiladores e fontes de alimentação redundantes.
+
+
+
+ a| 
+Conexões full-duplex / half-duplex
+ a| 
+Full-duplex e half-duplex referem-se aos modos de conexão. No modo full-duplex, dois dispositivos podem se comunicar simultaneamente em ambas as direções. No modo half-duplex, os dispositivos podem se comunicar em uma direção de cada vez (um dispositivo envia uma mensagem, enquanto o outro dispositivo a recebe).
+
+
+
+ a| 
+HIC
+ a| 
+Uma placa de interface de host (HIC) pode ser instalada opcionalmente dentro de um recipiente de controlador. As portas de host que são incorporadas ao controlador são chamadas portas de host de placa base. As portas de host que são incorporadas ao HIC são chamadas portas HIC.
+
+
+
+ a| 
+Resposta ICMP PING
+ a| 
+O ICMP (Internet Control Message Protocol) é um protocolo usado por sistemas operacionais de computadores em rede para enviar mensagens. As mensagens ICMP determinam se um host é acessível e quanto tempo leva para obter pacotes de e para esse host.
+
+
+
+ a| 
+Endereço MAC
+ a| 
+Identificadores de controle de acesso de Mídia (endereços MAC) são usados pela Ethernet para distinguir entre canais lógicos separados conetando duas portas na mesma interface de rede de transporte físico.
+
+
+
+ a| 
+cliente de gestão
+ a| 
+Um cliente de gerenciamento é o computador em que um navegador está instalado para acessar o System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Uma MTU (Maximum Transmission Unit) é o pacote ou quadro de maior tamanho que pode ser enviado em uma rede.
+
+
+
+ a| 
+NTP
+ a| 
+Network Time Protocol (NTP) é um protocolo de rede para sincronização de clock entre sistemas de computador em redes de dados.
+
+
+
+ a| 
+Configurações simplex
+ a| 
+Simplex é uma configuração de módulo de controlador único dentro da matriz de armazenamento. Um sistema simplex não oferece redundância de controlador ou caminho de disco, mas tem ventiladores redundantes e fontes de alimentação.
+
+
+
+ a| 
+VLAN
+ a| 
+Uma rede local virtual (VLAN) é uma rede lógica que se comporta como se estivesse fisicamente separada de outras redes suportadas pelos mesmos dispositivos (switches, roteadores, etc.).
+
+|===

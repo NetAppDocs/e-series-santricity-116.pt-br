@@ -1,0 +1,104 @@
+---
+permalink: sm-hardware/hardware-terminology.html 
+sidebar: sidebar 
+keywords: hardware, terms, apply, storage 
+summary: Saiba como os termos de hardware se aplicam ao storage array. 
+---
+= Terminologia de hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Saiba como os termos de hardware se aplicam ao storage array.
+
+[cols="1a,3a"]
+|===
+| Componente | Descrição 
+
+
+ a| 
+Storage array
+ a| 
+Um array de storage inclui compartimentos, controladores, unidades, software e firmware.
+
+
+
+ a| 
+Gaveta
+ a| 
+Uma prateleira é um gabinete instalado em um gabinete ou rack. Ele contém os componentes de hardware para o storage array. Há dois tipos de compartimentos: Um compartimento de controladora e um compartimento de unidade. Um compartimento de controladora inclui controladores e unidades. Um compartimento de unidades inclui módulos de entrada/saída (IOMs) e unidades.
+
+
+
+ a| 
+Controlador
+ a| 
+Um controlador consiste em uma placa, firmware e software. Controla as unidades e implementa as funções do System Manager.
+
+
+
+ a| 
+Condução
+ a| 
+Uma unidade é um dispositivo mecânico eletromagnético ou um dispositivo de memória de estado sólido que fornece os meios de armazenamento físico para os dados.
+
+
+
+ a| 
+Baía
+ a| 
+Um compartimento é um slot na prateleira onde uma unidade ou outro componente está instalado.
+
+
+
+ a| 
+Compartimento de unidades
+ a| 
+Um compartimento de unidade, também chamado de compartimento de expansão, contém um conjunto de unidades e dois módulos de entrada/saída (IOMs). As IOMs contêm portas SAS que conectam um compartimento de unidade a uma gaveta de controladora ou a outras gavetas de unidades.
+
+[NOTE]
+====
+Os compartimentos de unidades não estão disponíveis para sistemas de storage EF600.
+
+====
+
+
+ a| 
+Compartimento do controlador
+ a| 
+Um compartimento de controladora contém um conjunto de unidades e um ou mais coletores de controladora. Um recipiente do controlador contém os controladores, placas de interface do host (HICs) e baterias.
+
+
+
+ a| 
+Depósito da ventoinha/alimentação
+ a| 
+Um recipiente de alimentação/ventilador é um conjunto que desliza para dentro de uma prateleira. Inclui uma fonte de alimentação e uma ventoinha integrada.
+
+
+
+ a| 
+IOM (ESM)
+ a| 
+Uma IOM é um módulo de entrada/saída que inclui portas SAS para conetar o compartimento de unidade à gaveta da controladora.
+
+[NOTE]
+====
+Os compartimentos de unidades não estão disponíveis para sistemas de storage EF600.
+
+====
+[NOTE]
+====
+Nos modelos anteriores de controladores, a IOM foi referida como um módulo de serviço ambiental (ESM).
+
+====
+
+
+ a| 
+SFP
+ a| 
+Um SFP é um transcetor plugável de fator de forma pequeno (SFP).
+
+|===

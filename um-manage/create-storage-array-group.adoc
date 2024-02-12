@@ -1,0 +1,22 @@
+---
+permalink: um-manage/create-storage-array-group.html 
+sidebar: sidebar 
+keywords: create, storage, array, group, 
+summary: Você cria grupos de armazenamento e adiciona matrizes de armazenamento aos grupos. O grupo de armazenamento define quais unidades fornecem o armazenamento que compõe o volume. 
+---
+= Crie um grupo de storage array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você cria grupos de armazenamento e adiciona matrizes de armazenamento aos grupos. O grupo de armazenamento define quais unidades fornecem o armazenamento que compõe o volume.
+
+.Passos
+. Na página *Gerenciar*, selecione menu:Gerenciar grupos[criar grupo de storage].
+. No campo *Nome*, digite um nome para o novo grupo.
+. Selecione as matrizes de armazenamento que pretende adicionar ao novo grupo.
+. Clique em *criar*.
+

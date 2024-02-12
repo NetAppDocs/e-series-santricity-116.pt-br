@@ -1,0 +1,45 @@
+---
+permalink: um-admin/home-page-unified.html 
+sidebar: sidebar 
+keywords: unified, manager, web, interface, allow, manage, multiple, storage, arrays, single, view 
+summary: O Unified Manager é uma interface baseada na Web que permite gerenciar vários storage arrays em uma única visualização. 
+---
+= Visão geral da interface
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Unified Manager é uma interface baseada na Web que permite gerenciar vários storage arrays em uma única visualização.
+
+
+
+== Página principal
+
+Quando você faz login no Unified Manager, a página principal é aberta para *Gerenciar - todos*. Nesta página, você pode rolar por uma lista de matrizes de armazenamento descobertas na sua rede, ver o seu status e executar operações em uma única matriz ou em um grupo de matrizes.
+
+
+
+== Barra lateral de navegação
+
+A barra lateral de navegação fornece o seguinte:
+
+* *Gerenciar* -- Descubra matrizes de armazenamento em sua rede, inicie o Gerenciador de sistema SANtricity para uma matriz, importe configurações de um array para vários arrays e gerencie grupos de matrizes. Marque as caixas de seleção ao lado dos nomes dos arrays para executar operações neles, como importar configurações e criar grupos de matrizes. As elipses no final de cada linha fornecem um menu em linha para operações em um único array, como renomeá-lo.
+* *Operações* -- Veja o andamento das operações em lote, como importar configurações de um array para outro.
++
+[NOTE]
+====
+Algumas operações não estão disponíveis quando um storage array tem um status não ideal.
+
+====
+* *Gerenciamento de certificados* -- Gerencie certificados para autenticar entre navegadores e clientes.
+* *Gerenciamento de Acesso* -- estabeleça a autenticação do usuário para a interface do Unified Manager.
+* *Suporte* -- Veja opções de suporte técnico, recursos e Contatos.
+
+
+
+
+== Funções de banner
+
+No banner superior, você pode acessar a Ajuda e outras documentações da interface do Unified Manager. Você também pode acessar opções de administração, que estão disponíveis na lista suspensa ao lado do nome de login.

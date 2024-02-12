@@ -1,0 +1,192 @@
+---
+permalink: sm-support/ethernet-tcp-ip-statistics.html 
+sidebar: sidebar 
+keywords: ethernet, statistics, definition, statistics, transmitted, byte, expired 
+summary: Estatísticas Ethernet TCP/IP 
+---
+= Estatísticas Ethernet TCP/IP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Quando você seleciona estatísticas TCP/IP Ethernet, as estatísticas TCP nesta tabela são exibidas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
+
+[cols="2*"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+TxS
+ a| 
+Contagem de segmentos transmitidos
+
+
+
+ a| 
+TxB
+ a| 
+Contagem de bytes transmitidos
+
+
+
+ a| 
+RTxTE
+ a| 
+Contagem expirada do temporizador de retransmissão
+
+
+
+ a| 
+TxDACK
+ a| 
+Transmitir contagem de ACK atrasada
+
+
+
+ a| 
+TxACK
+ a| 
+Transmitir contagem ACK
+
+
+
+ a| 
+RXS
+ a| 
+Contagem de segmentos recebidos
+
+
+
+ a| 
+RXB
+ a| 
+Contagem de bytes recebidos
+
+
+
+ a| 
+RxDACK
+ a| 
+Contagem de ACK duplicada recebida
+
+
+
+ a| 
+RxACK
+ a| 
+Contagem de ACK recebida
+
+
+
+ a| 
+RxSEC
+ a| 
+Contagem de erros de segmento recebido
+
+
+
+ a| 
+RxSOOC
+ a| 
+Contagem fora de encomenda do segmento recebido
+
+
+
+ a| 
+RxWP
+ a| 
+Contagem de sondas da janela recebida
+
+
+
+ a| 
+RxWU
+ a| 
+Contagem de atualizações da janela recebida
+
+|===
+Quando você seleciona estatísticas TCP/IP Ethernet, as estatísticas IP nesta tabela são exibidas.
+
+[cols="2*"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+TxP
+ a| 
+Contagem de pacotes transmitidos
+
+
+
+ a| 
+TxB
+ a| 
+Contagem de bytes transmitidos
+
+
+
+ a| 
+TxF
+ a| 
+Contagem de fragmentos transmitidos
+
+
+
+ a| 
+RxP
+ a| 
+Contagem de pacotes recebidos. Selecione *Mostrar IPv4* para mostrar a contagem de IPv4 pacotes recebidos. Selecione *Mostrar IPv6* para mostrar a contagem de IPv6 pacotes recebidos.
+
+
+
+ a| 
+RXB
+ a| 
+Contagem de bytes recebidos
+
+
+
+ a| 
+RxF
+ a| 
+Contagem de fragmentos recebidos
+
+
+
+ a| 
+RxPE
+ a| 
+Contagem de erros do pacote recebido
+
+
+
+ a| 
+DR
+ a| 
+Contagem de remontagem de datagramas
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Erro de remontagem de datagramas, contagem de fragmentos sobrepostos
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Erro de remontagem de datagramas, contagem de fragmentos fora de ordem
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Erro de remontagem de datagramas, contagem de tempo limite
+
+|===

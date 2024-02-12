@@ -1,0 +1,23 @@
+---
+permalink: sm-storage/what-is-the-default-cluster.html 
+sidebar: sidebar 
+keywords: default, cluster, system, defined, entity, allow, unassociated, host, bus, adapter, port, identifier, logged, storage, array, gain, access, volumes, assign, physically, installed, particular 
+summary: 'O cluster padrão é uma entidade definida pelo sistema que permite que qualquer identificador de porta de host (HBA) do adaptador de barramento de host não associado que tenha feito logon no storage array para obter acesso a quaisquer volumes atribuídos ao cluster padrão. Um identificador de porta de host não associado é uma porta de host que, embora fisicamente instalada em um host e conetada ao storage array, não está logicamente associada a um host específico.' 
+---
+= Qual é o cluster padrão?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O cluster padrão é uma entidade definida pelo sistema que permite que qualquer identificador de porta de host (HBA) do adaptador de barramento de host não associado que tenha feito logon no storage array para obter acesso a quaisquer volumes atribuídos ao cluster padrão. Um identificador de porta de host não associado é uma porta de host que, embora fisicamente instalada em um host e conetada ao storage array, não está logicamente associada a um host específico.
+
+[NOTE]
+====
+Se você quiser que seus hosts tenham acesso específico a determinados volumes no storage array, _não_ use o cluster padrão. Em vez disso, você deve associar os identificadores de porta do host aos respetivos hosts. Isso pode ser feito manualmente usando o System Manager durante a operação criar host ou automaticamente usando o agente de contexto do host (HCA) instalado em cada host. Em seguida, você atribui volumes a um host individual ou a um cluster de host.
+
+====
+Você deve _somente_ usar o cluster padrão em situações especiais em que seu ambiente de armazenamento externo é propício para permitir que todos os hosts e todos os identificadores de porta de host conetados à matriz de armazenamento tenham acesso a todos os volumes (modo de acesso total) sem fazer especificamente os hosts conhecidos pelo storage array ou System Manager.
+
+Inicialmente, você pode atribuir volumes apenas ao cluster padrão por meio da interface de linha de comando (CLI). No entanto, depois de atribuir pelo menos um volume ao cluster padrão, essa entidade (chamada cluster padrão) é exibida no System Manager e você pode usar o System Manager para gerenciar essa entidade.

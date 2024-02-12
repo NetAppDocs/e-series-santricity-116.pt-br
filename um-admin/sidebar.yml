@@ -1,0 +1,26 @@
+---
+section: um-admin
+title: Interface principal
+entries:
+- title: Visão geral do Unified Manager
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Visão geral da interface
+      url: "/um-admin/home-page-unified.html"
+    - title: Navegadores suportados
+      url: "/um-admin/supported-browsers-unified.html"
+- title: Administração do Unified Manager
+  entries:
+  - title: Conceitos
+    entries:
+    - title: Proteção por senha do administrador
+      url: "/um-admin/administrator-password-protection-unified.html"
+  - title: Como tos
+    entries:
+    - title: Altere a senha de administrador
+      url: "/um-admin/change-admin-password-unified.html"
+    - title: Altere as senhas do storage array
+      url: "/um-admin/change-storage-array-passwords.html"
+    - title: Gerenciar tempos limite de sessão
+      url: "/um-admin/manage-session-timeouts-unified.html"

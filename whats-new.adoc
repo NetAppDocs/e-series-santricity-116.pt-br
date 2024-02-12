@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: whats new, new features, 
+summary: Novos recursos no SANtricity os. 
+---
+= Novidades no SANtricity os 11,6
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+As tabelas a seguir descrevem novos recursos no SANtricity os 11,6.
+
+
+
+== Novos recursos na versão 11,62
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+CLI para download
+ a| 
+O Gerenciador de sistemas para os storages E5700, EF570, E2800 e EF280 agora inclui a capacidade de baixar e instalar a interface de linha de comando (CLI) do SANtricity através de um link na página de menu:Configurações[sistema > Complementos]. Esta é a versão baseada em https da CLI (também conhecida como "CLI segura"). Essa capacidade foi lançada anteriormente com o array EF600.
+
+
+
+ a| 
+Espelhar alterações na configuração do System Manager e do Unified Manager
+ a| 
+As tarefas de configuração de pares espelhados síncronos e assíncronos passaram do System Manager para o Unified Manager. Todas as outras tarefas para gerenciar pares espelhados permanecem no System Manager.
+
+
+
+ a| 
+Novo HIC com capacidade para 200GB (apenas matrizes EF600)
+ a| 
+Esta versão adiciona um novo HIC compatível com 200GB para matrizes de armazenamento EF600. As interfaces compatíveis são NVMe/IB, NVMe/RoCE e iSER/IB. Além disso, o SRP/IB de 100GB GB é compatível.
+
+
+
+ a| 
+Opções adicionais em 100GB HIC (somente arrays EF600)
+ a| 
+Nas interfaces HIC de 100GB U existentes, iSER/IB e SRP/IB agora são compatíveis com storage arrays EF600. (Essas interfaces já são compatíveis com storages EF570 e E5700.)
+
+
+
+ a| 
+Eliminar servidor de correio no System Manager
+ a| 
+O System Manager permitiu que um servidor de e-mail fosse configurado, mas não tinha um mecanismo fácil de removê-lo. Com esta versão, a configuração do servidor de e-mail no System Manager agora pode ser removida dos Alertas, para que os alertas não sejam mais enviados para os endereços de e-mail associados a este servidor de e-mail.
+
+
+
+ a| 
+Ajustes de capacidade de otimização para pools e grupos de volume (somente unidades SSD) no System Manager
+ a| 
+Para unidades SSD, um novo controle deslizante de capacidade de otimização está disponível no System Manager para as configurações Pool e volume Group. O controle deslizante permite que você ajuste o equilíbrio da capacidade disponível em relação ao desempenho de gravação do SSD e à vida de desgaste da unidade.
+
+
+
+ a| 
+Novos tipos de host no System Manager
+ a| 
+Quando você cria novos hosts no System Manager, as opções de host apresentadas agora são organizadas em três categorias para fornecer melhor orientação: Comum, incomum e usar somente se direcionado.
+
+|===
+
+
+== Novos recursos na versão 11,61
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+Suporte de Fibre Channel para o EF600
+ a| 
+Esta versão adiciona suporte ao host Fibre Channel para o sistema de storage EF600. Este é o primeiro host SCSI com suporte do EF600, que foi lançado inicialmente com todos os protocolos host NVMe over Fabrics. Um único controlador para o EF600 pode ser visualizado e gerenciado no System Manager. Vários sistemas de storage EF600 podem ser visualizados e gerenciados no Unified Manager.
+
+
+
+ a| 
+Requisitos de senha para usuário admin
+ a| 
+Para iniciar sessão pela primeira vez no Unified Manager, tem de introduzir uma palavra-passe para o utilizador administrador. Já não existe uma palavra-passe predefinida "admin".
+
+|===
+
+
+== Novos recursos na versão 11,60
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+Novo modelo de sistema de armazenamento – EF600
+ a| 
+Este lançamento oferece um novo sistema de storage all-flash EF600. O EF600 inclui interfaces de host NVMe-of e SSDs NVMe.
+
+O EF600 aumenta significativamente a taxa de transferência e reduz a latência. As interfaces de host compatíveis incluem NVMe via IB, NVMe em RoCE e NVMe via FC, que podem ser configuradas no System Manager. Vários sistemas de storage EF600 podem ser visualizados e gerenciados no Unified Manager.
+
+
+
+| CLI para download | O Gerenciador de sistema agora inclui a capacidade de baixar e instalar a interface de linha de comando (CLI) do SANtricity através de um link no menu:Configurações[sistema > Complementos] página. Esta é a versão baseada em https da CLI. O pacote legado do SANtricity Storage Manager continua a incluir a CLI também. 
+|===

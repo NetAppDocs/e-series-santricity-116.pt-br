@@ -1,0 +1,59 @@
+---
+permalink: sm-support/drive-firmware-upgrades.html 
+sidebar: sidebar 
+keywords: drive, firmware, control, low, level, operating, characteristics, periodically, manufacturer, release, update, add, new, features, improve, performance, fix, detects 
+summary: O firmware da unidade controla as caraterísticas operacionais de baixo nível de uma unidade. Periodicamente, os fabricantes de unidades lançam atualizações para o firmware da unidade para adicionar novos recursos, melhorar o desempenho e corrigir defeitos. 
+---
+= Atualizações de firmware da unidade
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O firmware da unidade controla as caraterísticas operacionais de baixo nível de uma unidade. Periodicamente, os fabricantes de unidades lançam atualizações para o firmware da unidade para adicionar novos recursos, melhorar o desempenho e corrigir defeitos.
+
+
+
+== Atualizações de firmware de unidade on-line e off-line
+
+Existem dois tipos de métodos de atualização de firmware de unidade: On-line e off-line.
+
+
+
+== Online
+
+Durante uma atualização online, as unidades são atualizadas sequencialmente, uma de cada vez. O storage array continua processando e/S durante a atualização. Você não tem que parar I/O.. Se uma unidade puder fazer uma atualização on-line, o método on-line será usado automaticamente.
+
+As unidades que podem fazer uma atualização online incluem o seguinte:
+
+* Conduz em um pool ideal
+* Unidades em um grupo de volume redundante ideal (RAID 1, RAID 5 e RAID 6)
+* Unidades não atribuídas
+* Unidades de reserva hot spare em espera
+
+
+Fazer uma atualização de firmware de unidade on-line pode levar várias horas, expondo o storage array a possíveis falhas de volume. A falha de volume pode ocorrer nestes casos:
+
+* Em um grupo de volumes RAID 1 ou RAID 5, uma unidade falha enquanto uma unidade diferente no grupo de volumes está sendo atualizada.
+* Em um pool RAID 6 ou grupo de volumes, duas unidades falham enquanto uma unidade diferente no pool ou grupo de volumes está sendo atualizada.
+
+
+
+
+== Offline (paralelo)
+
+Durante uma atualização off-line, todas as unidades do mesmo tipo de unidade são atualizadas ao mesmo tempo. Este método requer a interrupção da atividade de e/S para os volumes associados às unidades selecionadas. Como várias unidades podem ser atualizadas simultaneamente (em paralelo), o tempo de inatividade geral é significativamente reduzido. Se uma unidade puder fazer apenas uma atualização off-line, o método off-line será usado automaticamente.
+
+As seguintes unidades DEVEM usar o método offline:
+
+* Unidades em um grupo de volume não redundante (RAID 0)
+* Unidades em um pool ou grupo de volumes não ideais
+* Unidades em cache SSD
+
+
+
+
+== Compatibilidade
+
+Cada arquivo de firmware da unidade contém informações sobre o tipo de unidade em que o firmware é executado. Pode transferir o ficheiro de firmware especificado apenas para uma unidade compatível. O System Manager verifica automaticamente a compatibilidade durante o processo de atualização.

@@ -1,0 +1,13 @@
+---
+permalink: sm-mirroring/generic-faqs.html 
+sidebar: sidebar 
+keywords: faqs 
+summary: FAQs 
+---
+= FAQs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+*Perguntas frequentes...*

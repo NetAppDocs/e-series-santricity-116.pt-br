@@ -1,0 +1,67 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: erase, secure, enabled, drive, reuse, volume, group, pool, ssd cache, storage array 
+summary: Você pode apagar uma unidade habilitada para que ela possa ser reutilizada em outro grupo de volumes, pool, cache SSD ou em outro storage. Esse procedimento redefine os atributos de segurança da unidade e garante que os dados não possam ser lidos novamente. 
+---
+= Apagar a unidade ativada de forma segura
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode apagar uma unidade habilitada para que ela possa ser reutilizada em outro grupo de volumes, pool, cache SSD ou em outro storage. Este procedimento redefine os atributos de segurança da unidade e garante que os dados não possam ser lidos novamente.
+
+.Antes de começar
+A unidade habilitada para segurança deve estar em um estado não atribuído.
+
+.Sobre esta tarefa
+Use a opção Apagar seguro somente se você quiser remover todos os dados em uma unidade habilitada para segurança e redefinir os atributos de segurança da unidade.
+
+[CAUTION]
+====
+*Possível perda de dados* -- a operação de apagamento seguro não pode ser desfeita. Certifique-se de que seleciona a unidade correta durante o procedimento.
+
+====
+.Passos
+. Selecione *hardware*.
+. Se o gráfico mostrar os controladores, clique em *Mostrar frente da prateleira*.
++
+O gráfico muda para mostrar as unidades em vez dos controladores.
+
+. Use os campos de filtro para exibir todas as unidades habilitadas e não atribuídas de forma segura no compartimento. Na lista suspensa *Mostrar unidades que são...*, selecione *ativado para segurança* e *não atribuído*.
++
+[NOTE]
+====
+Se todas as unidades compartilharem os mesmos atributos físicos, o campo de filtro *Mostrar unidades que são...* não será exibido. Se todas as unidades compartilharem os mesmos atributos lógicos, o campo de filtro *em qualquer lugar no storage de armazenamento* não será exibido.
+
+A exibição do compartimento mostra apenas as unidades não atribuídas e ativadas de forma segura; todas as outras estão acinzentadas.
+
+====
+. Selecione a unidade segura que pretende apagar.
++
+[CAUTION]
+====
+*Possível perda de dados* -- Certifique-se de que selecionou a unidade correta. Depois de concluir a operação de apagamento seguro, não é possível recuperar nenhum dos dados.
+
+====
++
+O menu de contexto da unidade é aberto.
+
+. Selecione *Apagar seguro*.
++
+A opção Secure Erase (Apagar seguro) só é apresentada se selecionar uma unidade não atribuída e ativada para segurança.
+
++
+[NOTE]
+====
+Para unidades NVMe SED, você precisa fornecer o PSID. Você pode encontrar o PSID na etiqueta da unidade. Isso é necessário se você não tiver a chave de bloqueio de backup.
+
+====
+. Na caixa de diálogo Secure Erase Drive (Unidade de eliminação segura), leia as informações importantes sobre a perda de dados.
+. Confirme a operação e clique em *Erase*.
+
+
+.Resultados
+A unidade agora está disponível para uso em outro grupo de volumes ou pool de discos, ou em outro storage de armazenamento.

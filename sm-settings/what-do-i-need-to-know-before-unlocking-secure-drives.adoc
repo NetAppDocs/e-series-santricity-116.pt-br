@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html 
+sidebar: sidebar 
+keywords: unlock, data, secure, enable, migration, storage array, import, security, key 
+summary: Para desbloquear os dados de uma unidade habilitada para segurança que é migrada para um novo storage array, você deve importar sua chave de segurança. 
+---
+= O que eu preciso saber antes de desbloquear unidades seguras?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para desbloquear os dados de uma unidade habilitada para segurança que é migrada para um novo storage array, você deve importar sua chave de segurança.
+
+Antes de desbloquear unidades seguras, tenha em mente as seguintes diretrizes:
+
+* A matriz de armazenamento de destino (onde você está movendo as unidades) já deve ter uma chave de segurança. As unidades migradas serão recodificadas para o storage de armazenamento de destino.
+* Para as unidades que você está migrando, você sabe o identificador da chave de segurança e a frase-passe que corresponde ao arquivo da chave de segurança.
+* O arquivo de chave de segurança está disponível no cliente de gerenciamento (o sistema com um navegador usado para acessar o System Manager).
+* Se estiver a repor uma unidade NVMe bloqueada, tem de introduzir a ID de segurança da unidade. Para localizar a ID de segurança, você deve remover fisicamente a unidade e encontrar a cadeia PSID (máximo de 32 carateres) na etiqueta da unidade. Certifique-se de que a unidade é reinstalada antes de iniciar a operação.
+

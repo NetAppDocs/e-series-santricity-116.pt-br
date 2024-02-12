@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: edit, community, names, snmp traps, destination 
+summary: Você pode editar nomes de comunidade para traps SNMP e também associar um nome de comunidade diferente a um destino de trap SNMP. 
+---
+= Editar nomes de comunidade para traps SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode editar nomes de comunidade para traps SNMP e também associar um nome de comunidade diferente a um destino de trap SNMP.
+
+.Antes de começar
+Um nome de comunidade deve ser criado, consistindo apenas em carateres ASCII imprimíveis. O nome da comunidade, que é uma cadeia de carateres que funciona como uma senha para os servidores de rede, é criado por um administrador de rede.
+
+.Passos
+. Selecione *menu:Configurações[Alertas]*.
+. Selecione a guia *SNMP*.
++
+Os destinos da armadilha e os nomes da comunidade aparecem na tabela.
+
+. Edite os nomes da comunidade da seguinte forma:
++
+** Para editar um nome de comunidade, selecione *Configurar Comunidades*. Digite o novo nome da comunidade e clique em *Salvar*. Os nomes da comunidade podem consistir apenas em carateres ASCII imprimíveis.
+** Para associar um nome de comunidade a um novo destino de armadilha, selecione o nome da comunidade na tabela e, em seguida, clique no ícone *Edit* (lápis) na extrema direita. Na lista suspensa Nome da comunidade, selecione um novo nome de comunidade para um destino de intercetação SNMP e clique no ícone *Salvar* (marca de seleção).
++
+[NOTE]
+====
+Se pretender cancelar as alterações, selecione o ícone *Cancelar* (X).
+
+====
+
+
+
+
+.Resultados
+A guia *SNMP* da página *Alertas* exibe as comunidades atualizadas.

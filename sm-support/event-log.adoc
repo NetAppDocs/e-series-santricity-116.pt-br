@@ -1,0 +1,27 @@
+---
+permalink: sm-support/event-log.html 
+sidebar: sidebar 
+keywords: event, log, provide, historical, record, occur, storage, array, aid, technical, support, troubleshooting, leading, failures 
+summary: O log de eventos fornece um Registro histórico de eventos que ocorreram no storage array e auxilia o suporte técnico na solução de problemas de eventos que levam a falhas. 
+---
+= Registo de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O log de eventos fornece um Registro histórico de eventos que ocorreram no storage array e auxilia o suporte técnico na solução de problemas de eventos que levam a falhas.
+
+O log de eventos é um Registro detalhado de eventos que ocorrem na matriz de armazenamento. Ele Registra eventos de configuração e falhas de componentes de storage array. Você pode usar o log de eventos como uma ferramenta de diagnóstico complementar ao Recovery Guru para rastrear eventos de storage array. Sempre consulte o Recovery Guru primeiro quando você tentar se recuperar de falhas de componentes no storage array.
+
+Os eventos no log de eventos são categorizados com status diferentes. Os eventos nos quais você precisa agir têm os seguintes status:
+
+* Crítico
+* Aviso
+
+
+Os eventos que são informativos e não exigem nenhuma ação imediata são os seguintes:
+
+* Informativo
+

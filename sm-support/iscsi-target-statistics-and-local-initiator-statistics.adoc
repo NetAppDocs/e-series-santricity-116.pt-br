@@ -1,0 +1,88 @@
+---
+permalink: sm-support/iscsi-target-statistics-and-local-initiator-statistics.html 
+sidebar: sidebar 
+keywords: target, statistics, local, initiator, statistics, select, target 
+summary: Estatísticas de destino iSCSI e estatísticas do iniciador local 
+---
+= Estatísticas de destino iSCSI e estatísticas do iniciador local
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Quando seleciona estatísticas de destino (protocolo) ou estatísticas de iniciador local (protocolo), são apresentadas as seguintes estatísticas. Você pode visualizar cada uma dessas estatísticas como estatísticas em bruto ou como estatísticas de linha de base.
+
+[cols="2*"]
+|===
+| Estatística | Definição 
+
+
+ a| 
+SL
+ a| 
+Contagem de login iSCSI bem-sucedida
+
+
+
+ a| 
+UL
+ a| 
+Contagem de início de sessão iSCSI sem êxito
+
+
+
+ a| 
+SA
+ a| 
+Contagem de autenticação iSCSI bem-sucedida (quando a autenticação está ativada)
+
+
+
+ a| 
+UA
+ a| 
+Contagem de autenticação iSCSI sem êxito (quando a autenticação está ativada)
+
+
+
+ a| 
+PDU
+ a| 
+Contagem correta de PDUs iSCSI processadas
+
+
+
+ a| 
+HDE
+ a| 
+PDUs iSCSI com contagem de erros de resumo do cabeçalho
+
+
+
+ a| 
+DDE
+ a| 
+PDUs iSCSI com contagem de erros de resumo de dados
+
+
+
+ a| 
+PE
+ a| 
+Contagem de PDUs com erros de protocolo iSCSI
+
+
+
+ a| 
+UST
+ a| 
+Contagem de terminações de sessão iSCSI inesperadas
+
+
+
+ a| 
+UCT
+ a| 
+Contagem inesperada de terminação de ligação iSCSI
+
+|===

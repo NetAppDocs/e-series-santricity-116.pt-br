@@ -1,0 +1,43 @@
+---
+permalink: sm-interface/set-default-units-for-capacity-values.html 
+sidebar: sidebar 
+keywords: system manager, display, capacity, gibibytes, tebibytes 
+summary: 'O System Manager pode exibir os valores de capacidade em gibibibytes (GiB) ou tebibytes (TIB).' 
+---
+= Definir unidades padrão para valores de capacidade
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O System Manager pode exibir os valores de capacidade em gibibibytes (GiB) ou tebibytes (TIB).
+
+.Sobre esta tarefa
+Mais uma vez
+
+[cols="2a,3a"]
+|===
+| Abreviatura | Valor 
+
+
+ a| 
+Gib
+ a| 
+1.024 3 bytes
+
+
+
+ a| 
+TIB
+ a| 
+1.024 4 bytes
+
+|===
+As preferências são armazenadas no armazenamento local do navegador para que todos os usuários possam ter suas próprias configurações.
+
+.Passos
+. Selecione *menu:Preferências[Definir preferências]*.
+. Clique no botão de opção para *Gibibytes* ou *Tebibytes* e confirme que deseja executar a operação.
+

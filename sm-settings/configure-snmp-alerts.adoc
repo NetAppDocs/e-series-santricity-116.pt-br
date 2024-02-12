@@ -1,0 +1,69 @@
+---
+permalink: sm-settings/configure-snmp-alerts.html 
+sidebar: sidebar 
+keywords: configuration, snmp alerts, identification, one server, storage array, snmp traps, community name, ip address 
+summary: 'Para configurar alertas SNMP (Simple Network Management Protocol), você deve identificar pelo menos um servidor onde o monitor de eventos da matriz de armazenamento pode enviar traps SNMP. A configuração requer um nome de comunidade e um endereço IP para o servidor.' 
+---
+= Configurar comunidades e destinos para alertas SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar alertas SNMP (Simple Network Management Protocol), você deve identificar pelo menos um servidor onde o monitor de eventos da matriz de armazenamento pode enviar traps SNMP. A configuração requer um nome de comunidade e um endereço IP para o servidor.
+
+.Antes de começar
+* Um servidor de rede deve ser configurado com um aplicativo de serviço SNMP. Você precisa do endereço de rede deste servidor (um endereço IPv4 ou IPv6), para que o monitor de eventos possa enviar mensagens de intercetação para esse endereço. Você pode usar mais de um servidor (até 10 servidores são permitidos).
+* Um nome de comunidade deve ser criado, consistindo apenas em carateres ASCII imprimíveis. O nome da comunidade, que é uma cadeia de carateres que funciona como uma senha para os servidores de rede, é normalmente criado por um administrador de rede. Podem ser criadas até 256 comunidades.
+* O arquivo de base de informações de gerenciamento (MIB) foi copiado e compilado no servidor com o aplicativo de serviço SNMP. Este arquivo MIB define os dados que estão sendo monitorados e gerenciados.
++
+Se você não tiver o arquivo MIB, poderá obtê-lo no site de suporte da NetApp:
+
++
+** Vá para https://mysupport.netapp.com/site/["Suporte à NetApp"^].
+** Clique em *Downloads*.
+** Clique em *Software*.
+** Encontre seu software de gerenciamento (por exemplo, Gerenciador de sistema SANtricity) e clique em *Go!* à direita.
+** Clique em Exibir e Baixar** na versão mais recente.
+** Clique em *continuar* na parte inferior da página.
+** Aceite o EULA.
+** Role para baixo até ver o arquivo *MIB para traps SNMP* e clique no link para fazer o download do arquivo.
+
+
+
+
+.Sobre esta tarefa
+Esta tarefa descreve como identificar o servidor SNMP para destinos de intercetação e, em seguida, testar sua configuração.
+
+.Passos
+. Selecione *menu:Configurações[Alertas]*.
+. Selecione a guia *SNMP*.
++
+Se uma comunidade ainda não estiver configurada, a guia SNMP exibirá "Configurar Comunidades".
+
+. Selecione *Configurar Comunidades*.
++
+A caixa de diálogo *Configurar Comunidades* é aberta.
+
+. No campo *Nome da Comunidade*, insira uma ou mais strings de comunidade para os servidores de rede e clique em *Salvar*.
++
+A página Alertas exibe "Adicionar destinos de armadilha".
+
+. Selecione *Adicionar destinos de armadilha*.
++
+A caixa de diálogo *Add Trap Destinations* (Adicionar destinos de armadilha*) é aberta.
+
+. Introduza um ou mais destinos de armadilha, selecione os nomes de comunidade associados e, em seguida, clique em *Adicionar*.
++
+** *Trap Destination* -- Digite um endereço IPv4 ou IPv6 do servidor executando um serviço SNMP.
+** *Nome da comunidade* -- na lista suspensa, selecione o nome da comunidade para esse destino da armadilha. (Se você definiu apenas um nome de comunidade, o nome já aparece neste campo.)
+** *Send Authentication Failure Trap* -- Selecione essa opção (a caixa de seleção) se você quiser alertar o destino da armadilha sempre que uma solicitação SNMP for rejeitada por causa de um nome de comunidade não reconhecido. Depois de clicar em *Add*, os destinos de intercetação e os nomes de comunidade associados aparecem na guia *SNMP* da página *Alerts*.
+
+
+. Para se certificar de que uma armadilha é válida, selecione um destino de armadilha na tabela e clique em *destino de armadilha de teste* para enviar uma armadilha de teste para o endereço configurado.
+
+
+.Resultados
+O monitor de eventos envia traps SNMP para o(s) servidor(es) sempre que ocorre um evento alertable.

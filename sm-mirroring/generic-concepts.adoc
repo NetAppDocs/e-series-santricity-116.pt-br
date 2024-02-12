@@ -1,0 +1,13 @@
+---
+permalink: sm-mirroring/generic-concepts.html 
+sidebar: sidebar 
+keywords: concepts 
+summary: Conceitos 
+---
+= Conceitos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+*Saiba mais sobre...*
